@@ -1,0 +1,21 @@
+feedback_id,member_id,feedback_date,channel,rating,category,subject,feedback_text,resolution_status,assigned_to,resolution_date
+7001,3001,2024-01-15,online,5,service,"Excellent loan process","The auto loan process was smooth and fast. Patricia Williams was very helpful and professional.",resolved,201,2024-01-16
+7002,3003,2024-01-16,phone,4,rates,"Competitive mortgage rates","Happy with the mortgage rate I received. Could be slightly better but overall satisfied.",resolved,202,2024-01-17
+7003,3005,2024-01-17,branch,5,service,"Outstanding customer service","The staff at Walnut Creek branch always goes above and beyond. Very impressed with their professionalism.",resolved,104,2024-01-18
+7004,3007,2024-01-18,online,3,fees,"ATM fees too high","The out-of-network ATM fees are higher than other credit unions. Please consider reducing them.",pending,NULL,NULL
+7005,3009,2024-01-19,mobile_app,4,technology,"Great mobile app","Love the new mobile app features. Depositing checks is so easy now. Minor bugs but overall excellent.",resolved,NULL,2024-01-20
+7006,3012,2024-01-20,email,5,service,"Exceptional mortgage experience","Steven Wilson made our home buying process stress-free. Highly recommend Patelco for mortgages.",resolved,206,2024-01-21
+7007,3014,2024-01-21,branch,2,wait_time,"Long wait times","Had to wait 45 minutes at the downtown branch. Need more tellers during lunch hours.",pending,101,NULL
+7008,3016,2024-01-22,phone,4,products,"Good CD rates","Certificate of deposit rates are competitive. Would like to see more term options available.",resolved,NULL,2024-01-23
+7009,3018,2024-01-23,online,5,service,"Quick loan approval","Personal loan was approved within 24 hours. Angela Brown was very responsive and helpful.",resolved,205,2024-01-24
+7010,3020,2024-01-24,mobile_app,3,technology,"App crashes occasionally","The mobile app crashes when trying to view loan details. Otherwise works well for basic transactions.",in_progress,NULL,NULL
+7011,3002,2024-01-25,branch,5,service,"Friendly staff","The Oakland branch staff is always friendly and knowledgeable. Great customer service experience.",resolved,102,2024-01-26
+7012,3004,2024-01-26,email,4,rates,"Good auto loan rates","Auto loan rates are competitive compared to banks. Process was straightforward and quick.",resolved,204,2024-01-27
+7013,3006,2024-01-27,phone,5,service,"Professional loan officer","Mark Johnson was extremely professional and helped me understand all loan options clearly.",resolved,204,2024-01-28
+7014,3008,2024-01-28,online,3,website,"Website navigation issues","The website is sometimes slow and hard to navigate. Could use a redesign for better user experience.",pending,NULL,NULL
+7015,3010,2024-01-29,branch,4,service,"Good branch experience","San Jose branch staff is helpful. Would appreciate extended weekend hours for working professionals.",resolved,103,2024-01-30
+7016,3011,2024-01-30,mobile_app,5,technology,"Love the budgeting tools","The new budgeting features in the app are fantastic. Helps me track spending and savings goals.",resolved,NULL,2024-01-31
+7017,3013,2024-01-31,phone,4,products,"Satisfied with savings rates","Savings account rates are better than most banks. Would like to see higher rates for larger balances.",resolved,NULL,2024-02-01
+7018,3015,2024-02-01,email,2,fees,"Overdraft fees","Overdraft fees seem excessive. Would prefer more warnings before charges are applied to account.",pending,NULL,NULL
+7019,3017,2024-02-02,branch,5,service,"Excellent financial advice","The investment advisor at Walnut Creek provided excellent guidance for my retirement planning.",resolved,104,2024-02-03
+7020,3019,2024-02-03,online,4,service,"Good overall experience","Been a member for several years. Generally satisfied with services and rates offered by Patelco.",resolved,NULL,2024-02-04

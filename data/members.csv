@@ -1,0 +1,21 @@
+member_id,first_name,last_name,email,phone,address,city,state,zip_code,date_joined,member_status,membership_type,date_of_birth,employment_status,annual_income,credit_score,preferred_branch_id,primary_account_id
+3001,Jennifer,Martinez,jennifer.martinez@email.com,415-555-0101,123 Market St,San Francisco,CA,94102,2018-03-15,active,individual,1985-07-22,employed,75000,720,101,4001
+3002,Michael,Chen,michael.chen@email.com,510-555-0102,456 Telegraph Ave,Oakland,CA,94612,2019-06-20,active,individual,1990-11-08,employed,82000,740,102,4002
+3003,Sarah,Johnson,sarah.johnson@email.com,415-555-0103,789 Valencia St,San Francisco,CA,94110,2017-01-10,active,family,1982-04-15,employed,95000,760,101,4003
+3004,David,Rodriguez,david.rodriguez@email.com,408-555-0104,321 First St,San Jose,CA,95113,2020-09-12,active,individual,1988-12-03,employed,68000,680,103,4004
+3005,Lisa,Thompson,lisa.thompson@email.com,925-555-0105,654 Main St,Walnut Creek,CA,94596,2016-11-25,active,family,1975-09-18,employed,110000,780,104,4005
+3006,Robert,Kim,robert.kim@email.com,650-555-0106,987 University Ave,Palo Alto,CA,94301,2021-02-08,active,individual,1992-06-30,employed,125000,800,105,4006
+3007,Amanda,Davis,amanda.davis@email.com,707-555-0107,147 Petaluma Blvd,Petaluma,CA,94952,2019-08-14,active,individual,1987-03-25,employed,58000,650,106,4007
+3008,Carlos,Gonzalez,carlos.gonzalez@email.com,415-555-0108,258 Mission St,San Francisco,CA,94105,2018-12-05,active,family,1980-10-12,employed,88000,720,101,4008
+3009,Emily,Wilson,emily.wilson@email.com,510-555-0109,369 Broadway,Oakland,CA,94607,2020-04-18,active,individual,1993-01-07,employed,72000,710,102,4009
+3010,James,Brown,james.brown@email.com,408-555-0110,741 Park Ave,San Jose,CA,95126,2017-07-22,active,individual,1984-08-14,employed,79000,690,103,4010
+3011,Maria,Garcia,maria.garcia@email.com,925-555-0111,852 Civic Dr,Walnut Creek,CA,94596,2019-03-30,active,family,1978-05-20,employed,102000,750,104,4011
+3012,Kevin,Lee,kevin.lee@email.com,650-555-0112,963 Forest Ave,Palo Alto,CA,94301,2021-11-15,active,individual,1991-09-05,employed,135000,820,105,4012
+3013,Rachel,Miller,rachel.miller@email.com,707-555-0113,159 Western Ave,Petaluma,CA,94952,2018-05-08,active,individual,1986-12-18,employed,62000,670,106,4013
+3014,Thomas,Anderson,thomas.anderson@email.com,415-555-0114,357 Howard St,San Francisco,CA,94103,2020-01-25,active,family,1983-02-28,employed,92000,730,101,4014
+3015,Nicole,Taylor,nicole.taylor@email.com,510-555-0115,468 Grand Ave,Oakland,CA,94610,2017-10-12,active,individual,1989-07-11,employed,76000,700,102,4015
+3016,Daniel,White,daniel.white@email.com,408-555-0116,579 Santa Clara St,San Jose,CA,95113,2019-12-03,active,individual,1985-04-02,employed,71000,680,103,4016
+3017,Jessica,Martin,jessica.martin@email.com,925-555-0117,680 Locust St,Walnut Creek,CA,94596,2021-06-20,active,family,1981-11-25,employed,98000,740,104,4017
+3018,Ryan,Clark,ryan.clark@email.com,650-555-0118,791 California Ave,Palo Alto,CA,94306,2018-09-17,active,individual,1990-08-16,employed,118000,790,105,4018
+3019,Michelle,Lewis,michelle.lewis@email.com,707-555-0119,802 Kentucky St,Petaluma,CA,94952,2020-07-09,active,individual,1987-01-30,employed,59000,660,106,4019
+3020,Christopher,Hall,christopher.hall@email.com,415-555-0120,913 Folsom St,San Francisco,CA,94107,2016-04-14,active,family,1979-06-08,employed,105000,770,101,4020

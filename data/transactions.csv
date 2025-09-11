@@ -1,0 +1,41 @@
+transaction_id,account_id,transaction_date,transaction_time,transaction_type,amount,description,merchant_name,merchant_category,location,balance_after,channel,status
+6001,4001,2024-01-15,09:30:00,debit,-45.67,Grocery Purchase,Whole Foods Market,grocery,San Francisco CA,2405.08,debit_card,completed
+6002,4001,2024-01-15,14:22:00,debit,-12.50,Coffee Shop,Blue Bottle Coffee,restaurant,San Francisco CA,2392.58,debit_card,completed
+6003,4002,2024-01-15,11:45:00,debit,-85.30,Gas Station,Shell,gas_station,Oakland CA,3195.20,debit_card,completed
+6004,4003,2024-01-15,16:15:00,debit,-125.75,Department Store,Target,retail,San Francisco CA,3999.55,debit_card,completed
+6005,4001,2024-01-16,08:00:00,credit,2500.00,Direct Deposit,Acme Corp,payroll,Electronic,4892.58,ach,completed
+6006,4004,2024-01-16,10:30:00,debit,-67.89,Restaurant,Chipotle,restaurant,San Jose CA,1807.36,debit_card,completed
+6007,4005,2024-01-16,13:45:00,debit,-156.40,Pharmacy,CVS Pharmacy,pharmacy,Walnut Creek CA,5524.50,debit_card,completed
+6008,4006,2024-01-16,15:20:00,debit,-89.25,Electronics,Best Buy,electronics,Palo Alto CA,7161.15,debit_card,completed
+6009,4007,2024-01-17,09:15:00,debit,-34.50,Fast Food,McDonald's,restaurant,Petaluma CA,1385.65,debit_card,completed
+6010,4008,2024-01-17,11:30:00,debit,-78.90,Grocery Purchase,Safeway,grocery,San Francisco CA,3811.85,debit_card,completed
+6011,4009,2024-01-17,14:00:00,debit,-23.75,Coffee Shop,Starbucks,restaurant,Oakland CA,2656.55,debit_card,completed
+6012,4010,2024-01-17,16:45:00,debit,-145.60,Clothing Store,Macy's,retail,San Jose CA,3005.25,debit_card,completed
+6013,4002,2024-01-18,08:30:00,credit,3200.00,Direct Deposit,Tech Solutions Inc,payroll,Electronic,6395.20,ach,completed
+6014,4001,2024-01-18,10:15:00,debit,-25.00,ATM Withdrawal,Patelco ATM,atm,San Francisco CA,4867.58,atm,completed
+6015,4003,2024-01-18,12:20:00,debit,-89.45,Home Improvement,Home Depot,home_improvement,San Francisco CA,3910.10,debit_card,completed
+6016,4004,2024-01-18,14:30:00,debit,-56.78,Grocery Purchase,Trader Joe's,grocery,San Jose CA,1750.58,debit_card,completed
+6017,4005,2024-01-19,09:00:00,credit,4200.00,Direct Deposit,Bay Area Consulting,payroll,Electronic,9724.50,ach,completed
+6018,4006,2024-01-19,11:15:00,debit,-125.30,Restaurant,The French Laundry,restaurant,Palo Alto CA,7035.85,debit_card,completed
+6019,4007,2024-01-19,13:45:00,debit,-67.25,Gas Station,Chevron,gas_station,Petaluma CA,1318.40,debit_card,completed
+6020,4008,2024-01-19,15:30:00,debit,-234.80,Grocery Purchase,Whole Foods Market,grocery,San Francisco CA,3577.05,debit_card,completed
+6021,4009,2024-01-20,08:45:00,debit,-45.90,Pharmacy,Walgreens,pharmacy,Oakland CA,2610.65,debit_card,completed
+6022,4010,2024-01-20,10:30:00,debit,-78.50,Electronics,Apple Store,electronics,San Jose CA,2926.75,debit_card,completed
+6023,4001,2024-01-20,12:15:00,debit,-156.75,Clothing Store,Nordstrom,retail,San Francisco CA,4710.83,debit_card,completed
+6024,4002,2024-01-20,14:00:00,debit,-89.60,Restaurant,Chez Panisse,restaurant,Oakland CA,6305.60,debit_card,completed
+6025,4003,2024-01-21,09:30:00,debit,-34.25,Coffee Shop,Philz Coffee,restaurant,San Francisco CA,3875.85,debit_card,completed
+6026,4004,2024-01-21,11:45:00,debit,-125.40,Department Store,Costco,retail,San Jose CA,1625.18,debit_card,completed
+6027,4005,2024-01-21,13:20:00,debit,-67.80,Gas Station,76,gas_station,Walnut Creek CA,9656.70,debit_card,completed
+6028,4006,2024-01-21,15:10:00,debit,-234.50,Home Improvement,Lowe's,home_improvement,Palo Alto CA,6801.35,debit_card,completed
+6029,4007,2024-01-22,08:15:00,debit,-45.30,Grocery Purchase,Lucky,grocery,Petaluma CA,1273.10,debit_card,completed
+6030,4008,2024-01-22,10:00:00,debit,-89.75,Restaurant,Gary Danko,restaurant,San Francisco CA,3487.30,debit_card,completed
+6031,4009,2024-01-22,12:30:00,credit,2800.00,Direct Deposit,Design Studio LLC,payroll,Electronic,5287.30,ach,completed
+6032,4010,2024-01-22,14:45:00,debit,-156.25,Electronics,Fry's Electronics,electronics,San Jose CA,2770.50,debit_card,completed
+6033,4001,2024-01-23,09:00:00,debit,-78.90,Pharmacy,Rite Aid,pharmacy,San Francisco CA,4631.93,debit_card,completed
+6034,4002,2024-01-23,11:15:00,debit,-234.60,Clothing Store,Banana Republic,retail,Oakland CA,6071.00,debit_card,completed
+6035,4003,2024-01-23,13:30:00,debit,-45.75,Fast Food,In-N-Out Burger,restaurant,San Francisco CA,3830.10,debit_card,completed
+6036,4004,2024-01-23,15:45:00,debit,-125.80,Grocery Purchase,Whole Foods Market,grocery,San Jose CA,1499.38,debit_card,completed
+6037,4005,2024-01-24,08:30:00,debit,-67.40,Coffee Shop,Peet's Coffee,restaurant,Walnut Creek CA,9589.30,debit_card,completed
+6038,4006,2024-01-24,10:45:00,debit,-189.25,Restaurant,Atelier Crenn,restaurant,Palo Alto CA,6612.10,debit_card,completed
+6039,4007,2024-01-24,12:20:00,debit,-56.80,Gas Station,Arco,gas_station,Petaluma CA,1216.30,debit_card,completed
+6040,4008,2024-01-24,14:15:00,debit,-145.90,Department Store,Macy's,retail,San Francisco CA,3341.40,debit_card,completed

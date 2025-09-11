@@ -1,0 +1,26 @@
+account_id,member_id,account_type,account_name,balance,interest_rate,date_opened,account_status,minimum_balance,overdraft_protection,branch_id
+4001,3001,checking,Primary Checking,2450.75,0.01,2018-03-15,active,25.00,true,101
+4002,3002,checking,Primary Checking,3280.50,0.01,2019-06-20,active,25.00,true,102
+4003,3003,checking,Family Checking,4125.30,0.01,2017-01-10,active,100.00,true,101
+4004,3004,checking,Primary Checking,1875.25,0.01,2020-09-12,active,25.00,false,103
+4005,3005,checking,Family Checking,5680.90,0.01,2016-11-25,active,100.00,true,104
+4006,3006,checking,Primary Checking,7250.40,0.01,2021-02-08,active,25.00,true,105
+4007,3007,checking,Primary Checking,1420.15,0.01,2019-08-14,active,25.00,false,106
+4008,3008,checking,Family Checking,3890.75,0.01,2018-12-05,active,100.00,true,101
+4009,3009,checking,Primary Checking,2680.30,0.01,2020-04-18,active,25.00,true,102
+4010,3010,checking,Primary Checking,3150.85,0.01,2017-07-22,active,25.00,false,103
+4011,3011,savings,High Yield Savings,15250.00,2.50,2019-03-30,active,500.00,false,104
+4012,3012,savings,High Yield Savings,22800.75,2.50,2021-11-15,active,500.00,false,105
+4013,3013,savings,Regular Savings,8750.25,1.75,2018-05-08,active,100.00,false,106
+4014,3014,savings,High Yield Savings,18900.50,2.50,2020-01-25,active,500.00,false,101
+4015,3015,savings,Regular Savings,12400.80,1.75,2017-10-12,active,100.00,false,102
+4016,3016,certificate_deposit,12-Month CD,25000.00,3.25,2019-12-03,active,1000.00,false,103
+4017,3017,certificate_deposit,24-Month CD,35000.00,3.75,2021-06-20,active,1000.00,false,104
+4018,3018,certificate_deposit,36-Month CD,50000.00,4.00,2018-09-17,active,1000.00,false,105
+4019,3019,money_market,Money Market Plus,45000.25,2.75,2020-07-09,active,2500.00,false,106
+4020,3020,money_market,Money Market Plus,38750.60,2.75,2016-04-14,active,2500.00,false,101
+4021,3001,savings,Emergency Fund,8500.00,1.75,2018-06-01,active,100.00,false,101
+4022,3003,savings,Vacation Fund,12000.50,1.75,2017-03-15,active,100.00,false,101
+4023,3005,certificate_deposit,18-Month CD,30000.00,3.50,2017-01-10,active,1000.00,false,104
+4024,3008,savings,Kids College Fund,22500.75,1.75,2019-01-20,active,100.00,false,101
+4025,3011,money_market,Investment Account,55000.00,2.75,2019-06-15,active,2500.00,false,104

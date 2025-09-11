@@ -1,0 +1,11 @@
+branch_id,branch_name,address,city,state,zip_code,phone,manager_name,branch_type,services_offered,hours_weekday,hours_saturday,hours_sunday,atm_available,drive_thru_available,established_date
+101,Downtown San Francisco,555 Market St,San Francisco,CA,94105,415-555-2001,Maria Rodriguez,full_service,"checking,savings,loans,mortgages,investment,notary",09:00-17:00,09:00-14:00,closed,true,false,1985-06-15
+102,Oakland Main,1200 Broadway,Oakland,CA,94612,510-555-2002,James Chen,full_service,"checking,savings,loans,mortgages,investment,notary",09:00-17:00,09:00-14:00,closed,true,true,1978-03-20
+103,San Jose Central,150 W Santa Clara St,San Jose,CA,95113,408-555-2003,Lisa Thompson,full_service,"checking,savings,loans,mortgages,investment",09:00-17:00,09:00-14:00,closed,true,true,1982-11-10
+104,Walnut Creek,1500 Locust St,Walnut Creek,CA,94596,925-555-2004,David Kim,full_service,"checking,savings,loans,mortgages,investment,notary",09:00-17:00,09:00-14:00,closed,true,false,1990-08-25
+105,Palo Alto,456 University Ave,Palo Alto,CA,94301,650-555-2005,Sarah Johnson,full_service,"checking,savings,loans,mortgages,investment",09:00-17:00,09:00-14:00,closed,true,true,1995-04-12
+106,Petaluma,789 Petaluma Blvd N,Petaluma,CA,94952,707-555-2006,Michael Davis,branch,"checking,savings,loans",09:00-17:00,09:00-13:00,closed,true,false,2001-09-18
+107,Fremont Express,2500 Fremont Blvd,Fremont,CA,94538,510-555-2007,Jennifer Wilson,express,"checking,savings,atm",10:00-18:00,10:00-15:00,closed,true,true,2010-02-28
+108,Richmond,4200 MacDonald Ave,Richmond,CA,94805,510-555-2008,Robert Martinez,branch,"checking,savings,loans",09:00-17:00,09:00-14:00,closed,true,false,1988-07-14
+109,Concord,1800 Willow Pass Rd,Concord,CA,94520,925-555-2009,Amanda Garcia,full_service,"checking,savings,loans,mortgages,investment",09:00-17:00,09:00-14:00,closed,true,true,1992-12-05
+110,Santa Rosa,3100 Montgomery Dr,Santa Rosa,CA,95405,707-555-2010,Carlos Brown,branch,"checking,savings,loans",09:00-17:00,09:00-13:00,closed,true,false,1998-05-30

@@ -1,0 +1,11 @@
+loan_officer_id,first_name,last_name,email,phone,branch_id,specialization,years_experience,license_number,hire_date,performance_rating,loans_originated_ytd,total_loan_volume_ytd
+201,Patricia,Williams,patricia.williams@patelco.org,415-555-3001,101,auto_loans,8,LO12345,2016-03-15,excellent,45,2250000.00
+202,Jonathan,Miller,jonathan.miller@patelco.org,415-555-3002,101,mortgages,12,LO12346,2012-01-20,excellent,28,14500000.00
+203,Sandra,Davis,sandra.davis@patelco.org,925-555-3003,104,home_equity,10,LO12347,2014-07-10,good,35,2800000.00
+204,Mark,Johnson,mark.johnson@patelco.org,650-555-3004,105,auto_loans,6,LO12348,2018-09-25,excellent,52,2650000.00
+205,Angela,Brown,angela.brown@patelco.org,415-555-3005,101,personal_loans,5,LO12349,2019-11-12,good,78,1950000.00
+206,Steven,Wilson,steven.wilson@patelco.org,650-555-3006,105,mortgages,15,LO12350,2009-04-18,excellent,22,18200000.00
+207,Rebecca,Garcia,rebecca.garcia@patelco.org,510-555-3007,102,auto_loans,7,LO12351,2017-06-30,good,41,2180000.00
+208,Christopher,Martinez,christopher.martinez@patelco.org,408-555-3008,103,mortgages,9,LO12352,2015-08-14,excellent,31,16800000.00
+209,Michelle,Anderson,michelle.anderson@patelco.org,925-555-3009,104,personal_loans,4,LO12353,2020-02-28,good,65,1625000.00
+210,Daniel,Taylor,daniel.taylor@patelco.org,707-555-3010,106,auto_loans,11,LO12354,2013-12-05,excellent,38,1980000.00
