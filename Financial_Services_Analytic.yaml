@@ -1,0 +1,818 @@
+name: Financial_Services_Analytics
+tables:
+  - name: MEMBERS
+    base_table:
+      database: PATELCO_DEMO
+      schema: CREDIT_UNION_DATA
+      table: MEMBERS
+    dimensions:
+      - name: ANNUAL_INCOME
+        synonyms:
+          - income
+          - salary
+          - earnings
+        description: Member's annual income
+        expr: ANNUAL_INCOME
+        data_type: NUMBER
+        sample_values:
+          - '75000'
+          - '82000'
+          - '95000'
+      - name: CITY
+        synonyms:
+          - member_location
+          - member_city
+          - residence
+        description: Member's city of residence
+        expr: CITY
+        data_type: VARCHAR
+        sample_values:
+          - San Francisco
+          - Oakland
+          - San Jose
+      - name: CREDIT_SCORE
+        synonyms:
+          - credit_rating
+          - FICO_score
+          - creditworthiness
+        description: Member's credit score
+        expr: CREDIT_SCORE
+        data_type: NUMBER
+        sample_values:
+          - '720'
+          - '740'
+          - '760'
+      - name: DATE_JOINED
+        synonyms:
+          - join_date
+          - membership_date
+          - enrollment_date
+        description: Date when member joined the financial institution
+        expr: DATE_JOINED
+        data_type: DATE
+        sample_values:
+          - '2018-03-15'
+          - '2019-06-20'
+          - '2017-01-10'
+      - name: EMPLOYMENT_STATUS
+        synonyms:
+          - employment
+          - job_status
+        description: Member's employment status
+        expr: EMPLOYMENT_STATUS
+        data_type: VARCHAR
+        sample_values:
+          - employed
+          - unemployed
+          - retired
+      - name: FIRST_NAME
+        synonyms:
+          - member_name
+          - first_name
+        description: Member's first name
+        expr: FIRST_NAME
+        data_type: VARCHAR
+        sample_values:
+          - Jennifer
+          - Michael
+          - Sarah
+      - name: LAST_NAME
+        synonyms:
+          - surname
+          - family_name
+          - last_name
+        description: Member's last name
+        expr: LAST_NAME
+        data_type: VARCHAR
+        sample_values:
+          - Martinez
+          - Chen
+          - Johnson
+      - name: MEMBER_ID
+        synonyms:
+          - member_ID
+          - member_identifier
+          - customer_ID
+        description: Unique identifier for the financial institution member
+        expr: MEMBER_ID
+        data_type: NUMBER
+        sample_values:
+          - '3001'
+          - '3002'
+          - '3003'
+      - name: MEMBER_STATUS
+        synonyms:
+          - status
+          - membership_status
+        description: Current status of the member
+        expr: MEMBER_STATUS
+        data_type: VARCHAR
+        sample_values:
+          - active
+          - inactive
+      - name: MEMBERSHIP_TYPE
+        synonyms:
+          - membership
+          - member_type
+          - account_type
+        description: Type of membership (individual or family)
+        expr: MEMBERSHIP_TYPE
+        data_type: VARCHAR
+        sample_values:
+          - individual
+          - family
+      - name: STATE
+        synonyms:
+          - member_state
+          - state
+        description: Member's state of residence
+        expr: STATE
+        data_type: VARCHAR
+        sample_values:
+          - CA
+    primary_key:
+      columns:
+        - MEMBER_ID
+  - name: ACCOUNTS
+    base_table:
+      database: PATELCO_DEMO
+      schema: CREDIT_UNION_DATA
+      table: ACCOUNTS
+    dimensions:
+      - name: ACCOUNT_ID
+        synonyms:
+          - account_number
+          - account_identifier
+        description: Unique identifier for the account
+        expr: ACCOUNT_ID
+        data_type: NUMBER
+        sample_values:
+          - '4001'
+          - '4002'
+          - '4003'
+      - name: ACCOUNT_NAME
+        synonyms:
+          - account_title
+          - product_name
+        description: Name of the account
+        expr: ACCOUNT_NAME
+        data_type: VARCHAR
+        sample_values:
+          - Primary Checking
+          - High Yield Savings
+          - Money Market
+      - name: ACCOUNT_STATUS
+        synonyms:
+          - status
+          - account_state
+        description: Current status of the account
+        expr: ACCOUNT_STATUS
+        data_type: VARCHAR
+        sample_values:
+          - active
+          - closed
+          - frozen
+      - name: ACCOUNT_TYPE
+        synonyms:
+          - account_category
+          - product_type
+        description: Type of account
+        expr: ACCOUNT_TYPE
+        data_type: VARCHAR
+        sample_values:
+          - checking
+          - savings
+          - money_market
+      - name: BRANCH_ID
+        synonyms:
+          - branch_identifier
+          - location_ID
+          - originating_branch
+        description: ID of the branch where account was opened
+        expr: BRANCH_ID
+        data_type: NUMBER
+        sample_values:
+          - '101'
+          - '102'
+          - '103'
+      - name: DATE_OPENED
+        synonyms:
+          - open_date
+          - creation_date
+        description: Date when account was opened
+        expr: DATE_OPENED
+        data_type: DATE
+        sample_values:
+          - '2018-03-15'
+          - '2019-06-20'
+          - '2020-01-10'
+      - name: MEMBER_ID
+        synonyms:
+          - owner_id
+          - member_identifier
+        description: Member ID who owns the account
+        expr: MEMBER_ID
+        data_type: NUMBER
+        sample_values:
+          - '3001'
+          - '3002'
+          - '3003'
+      - name: OVERDRAFT_PROTECTION
+        synonyms:
+          - overdraft_coverage
+          - overdraft_service
+        description: Whether account has overdraft protection
+        expr: OVERDRAFT_PROTECTION
+        data_type: BOOLEAN
+        sample_values:
+          - 'true'
+          - 'false'
+    facts:
+      - name: BALANCE
+        synonyms:
+          - account_balance
+          - current_balance
+          - available_balance
+        description: Current account balance
+        expr: BALANCE
+        data_type: NUMBER
+        sample_values:
+          - '2450.75'
+          - '15720.50'
+          - '8934.25'
+      - name: INTEREST_RATE
+        synonyms:
+          - rate
+          - yield
+          - return_rate
+        description: Interest rate for the account
+        expr: INTEREST_RATE
+        data_type: NUMBER
+        sample_values:
+          - '0.01'
+          - '0.025'
+          - '0.015'
+      - name: MINIMUM_BALANCE
+        synonyms:
+          - min_balance
+          - required_balance
+        description: Minimum balance required for the account
+        expr: MINIMUM_BALANCE
+        data_type: NUMBER
+        sample_values:
+          - '25.00'
+          - '500.00'
+          - '1000.00'
+    primary_key:
+      columns:
+        - ACCOUNT_ID
+  - name: LOANS
+    base_table:
+      database: PATELCO_DEMO
+      schema: CREDIT_UNION_DATA
+      table: LOANS
+    dimensions:
+      - name: BRANCH_ID
+        synonyms:
+          - originating_branch
+          - location_ID
+        description: ID of the branch where loan was originated
+        expr: BRANCH_ID
+        data_type: NUMBER
+        sample_values:
+          - '101'
+          - '102'
+          - '103'
+      - name: COLLATERAL_TYPE
+        synonyms:
+          - security
+          - backing
+        description: Type of collateral for the loan
+        expr: COLLATERAL_TYPE
+        data_type: VARCHAR
+        sample_values:
+          - vehicle
+          - real_estate
+          - none
+      - name: LOAN_ID
+        synonyms:
+          - loan_number
+          - loan_identifier
+        description: Unique identifier for the loan
+        expr: LOAN_ID
+        data_type: NUMBER
+        sample_values:
+          - '5001'
+          - '5002'
+          - '5003'
+      - name: LOAN_OFFICER_ID
+        synonyms:
+          - officer_id
+          - originator_id
+        description: ID of the loan officer who originated the loan
+        expr: LOAN_OFFICER_ID
+        data_type: NUMBER
+        sample_values:
+          - '201'
+          - '202'
+          - '203'
+      - name: LOAN_STATUS
+        synonyms:
+          - status
+          - loan_state
+        description: Current status of the loan
+        expr: LOAN_STATUS
+        data_type: VARCHAR
+        sample_values:
+          - current
+          - paid_off
+          - delinquent
+      - name: LOAN_TYPE
+        synonyms:
+          - loan_category
+          - loan_product
+        description: Type of loan
+        expr: LOAN_TYPE
+        data_type: VARCHAR
+        sample_values:
+          - auto
+          - mortgage
+          - personal
+      - name: MATURITY_DATE
+        synonyms:
+          - end_date
+          - payoff_date
+        description: Date when loan matures
+        expr: MATURITY_DATE
+        data_type: DATE
+        sample_values:
+          - '2025-05-15'
+          - '2047-03-20'
+          - '2024-08-10'
+      - name: MEMBER_ID
+        synonyms:
+          - borrower_id
+          - member_identifier
+        description: Member ID who has the loan
+        expr: MEMBER_ID
+        data_type: NUMBER
+        sample_values:
+          - '3001'
+          - '3002'
+          - '3003'
+      - name: ORIGINATION_DATE
+        synonyms:
+          - loan_date
+          - start_date
+        description: Date when loan was originated
+        expr: ORIGINATION_DATE
+        data_type: DATE
+        sample_values:
+          - '2020-05-15'
+          - '2019-03-20'
+          - '2021-08-10'
+      - name: PURPOSE
+        synonyms:
+          - loan_purpose
+          - use_of_funds
+        description: Purpose of the loan
+        expr: PURPOSE
+        data_type: VARCHAR
+        sample_values:
+          - vehicle_purchase
+          - home_purchase
+          - debt_consolidation
+    facts:
+      - name: INTEREST_RATE
+        synonyms:
+          - rate
+          - APR
+        description: Interest rate for the loan
+        expr: INTEREST_RATE
+        data_type: NUMBER
+        sample_values:
+          - '4.25'
+          - '3.75'
+          - '8.50'
+      - name: LOAN_AMOUNT
+        synonyms:
+          - principal
+          - loan_principal
+          - original_amount
+        description: Original loan amount
+        expr: LOAN_AMOUNT
+        data_type: NUMBER
+        sample_values:
+          - '28500.00'
+          - '485000.00'
+          - '15000.00'
+      - name: MONTHLY_PAYMENT
+        synonyms:
+          - payment
+          - monthly_amount
+        description: Monthly payment amount
+        expr: MONTHLY_PAYMENT
+        data_type: NUMBER
+        sample_values:
+          - '530.75'
+          - '2245.80'
+          - '485.50'
+      - name: OUTSTANDING_BALANCE
+        synonyms:
+          - remaining_balance
+          - current_balance
+        description: Current outstanding balance on the loan
+        expr: OUTSTANDING_BALANCE
+        data_type: NUMBER
+        sample_values:
+          - '22400.50'
+          - '462800.25'
+          - '12750.00'
+      - name: TERM_MONTHS
+        synonyms:
+          - term
+          - duration
+        description: Loan term in months
+        expr: TERM_MONTHS
+        data_type: NUMBER
+        sample_values:
+          - '60'
+          - '360'
+          - '36'
+    primary_key:
+      columns:
+        - LOAN_ID
+  - name: TRANSACTIONS
+    base_table:
+      database: PATELCO_DEMO
+      schema: CREDIT_UNION_DATA
+      table: TRANSACTIONS
+    dimensions:
+      - name: ACCOUNT_ID
+        synonyms:
+          - account_number
+          - account_identifier
+        description: Account ID where transaction occurred
+        expr: ACCOUNT_ID
+        data_type: NUMBER
+        sample_values:
+          - '4001'
+          - '4002'
+          - '4003'
+      - name: CHANNEL
+        synonyms:
+          - method
+          - platform
+          - medium
+        description: Channel used for the transaction
+        expr: CHANNEL
+        data_type: VARCHAR
+        sample_values:
+          - debit_card
+          - online
+          - ATM
+      - name: LOCATION
+        synonyms:
+          - transaction_location
+          - where
+        description: Location where transaction occurred
+        expr: LOCATION
+        data_type: VARCHAR
+        sample_values:
+          - San Francisco CA
+          - Oakland CA
+          - San Jose CA
+      - name: MERCHANT_CATEGORY
+        synonyms:
+          - category
+          - business_type
+          - industry
+        description: Category of the merchant
+        expr: MERCHANT_CATEGORY
+        data_type: VARCHAR
+        sample_values:
+          - grocery
+          - restaurant
+          - gas_station
+      - name: MERCHANT_NAME
+        synonyms:
+          - vendor
+          - retailer
+          - business
+        description: Name of the merchant where transaction occurred
+        expr: MERCHANT_NAME
+        data_type: VARCHAR
+        sample_values:
+          - Whole Foods Market
+          - Blue Bottle Coffee
+          - Shell Gas Station
+      - name: STATUS
+        synonyms:
+          - transaction_status
+          - state
+        description: Status of the transaction
+        expr: STATUS
+        data_type: VARCHAR
+        sample_values:
+          - completed
+          - pending
+          - failed
+      - name: TRANSACTION_DATE
+        synonyms:
+          - date
+          - transaction_day
+          - when
+        description: Date of the transaction
+        expr: TRANSACTION_DATE
+        data_type: DATE
+        sample_values:
+          - '2024-01-15'
+          - '2024-01-16'
+          - '2024-01-17'
+      - name: TRANSACTION_ID
+        synonyms:
+          - transaction_number
+          - txn_id
+        description: Unique identifier for the transaction
+        expr: TRANSACTION_ID
+        data_type: NUMBER
+        sample_values:
+          - '6001'
+          - '6002'
+          - '6003'
+      - name: TRANSACTION_TYPE
+        synonyms:
+          - transaction_category
+          - txn_type
+          - payment_type
+        description: Type of transaction
+        expr: TRANSACTION_TYPE
+        data_type: VARCHAR
+        sample_values:
+          - debit
+          - credit
+          - transfer
+    facts:
+      - name: AMOUNT
+        synonyms:
+          - transaction_amount
+          - value
+          - sum
+        description: Transaction amount (negative for debits, positive for credits)
+        expr: AMOUNT
+        data_type: NUMBER
+        sample_values:
+          - '-45.67'
+          - '2500.00'
+          - '-12.50'
+      - name: BALANCE_AFTER
+        synonyms:
+          - resulting_balance
+          - new_balance
+          - balance
+        description: Account balance after the transaction
+        expr: BALANCE_AFTER
+        data_type: NUMBER
+        sample_values:
+          - '2405.08'
+          - '4892.58'
+          - '3195.20'
+    primary_key:
+      columns:
+        - TRANSACTION_ID
+  - name: BRANCHES
+    base_table:
+      database: PATELCO_DEMO
+      schema: CREDIT_UNION_DATA
+      table: BRANCHES
+    dimensions:
+      - name: ATM_AVAILABLE
+        synonyms:
+          - ATM
+          - automated_teller
+        description: Whether ATM is available at the branch
+        expr: ATM_AVAILABLE
+        data_type: BOOLEAN
+        sample_values:
+          - 'true'
+          - 'false'
+      - name: BRANCH_ID
+        synonyms:
+          - branch_identifier
+          - location_ID
+        description: Unique identifier for the branch
+        expr: BRANCH_ID
+        data_type: NUMBER
+        sample_values:
+          - '101'
+          - '102'
+          - '103'
+      - name: BRANCH_NAME
+        synonyms:
+          - branch
+          - branch_location
+          - office
+        description: Name of the branch
+        expr: BRANCH_NAME
+        data_type: VARCHAR
+        sample_values:
+          - Downtown San Francisco
+          - Oakland Main
+          - San Jose Central
+      - name: BRANCH_TYPE
+        synonyms:
+          - service_type
+          - branch_category
+        description: Type of branch
+        expr: BRANCH_TYPE
+        data_type: VARCHAR
+        sample_values:
+          - full_service
+          - branch
+          - express
+      - name: CITY
+        synonyms:
+          - branch_city
+          - city_location
+          - area
+        description: City where branch is located
+        expr: CITY
+        data_type: VARCHAR
+        sample_values:
+          - San Francisco
+          - Oakland
+          - San Jose
+      - name: DRIVE_THRU_AVAILABLE
+        synonyms:
+          - drive_through
+          - drive_up
+        description: Whether drive-thru service is available
+        expr: DRIVE_THRU_AVAILABLE
+        data_type: BOOLEAN
+        sample_values:
+          - 'true'
+          - 'false'
+      - name: MANAGER_NAME
+        synonyms:
+          - manager
+          - branch_manager
+        description: Name of the branch manager
+        expr: MANAGER_NAME
+        data_type: VARCHAR
+        sample_values:
+          - Maria Rodriguez
+          - James Chen
+          - Sarah Williams
+      - name: SERVICES_OFFERED
+        synonyms:
+          - services
+          - offerings
+          - products
+        description: Services offered at the branch
+        expr: SERVICES_OFFERED
+        data_type: VARCHAR
+        sample_values:
+          - checking,savings,loans,mortgages,investment,notary
+          - checking,savings,loans
+          - ATM,deposits
+      - name: STATE
+        synonyms:
+          - branch_state
+          - region
+        description: State where branch is located
+        expr: STATE
+        data_type: VARCHAR
+        sample_values:
+          - CA
+    primary_key:
+      columns:
+        - BRANCH_ID
+relationships:
+  - name: member_accounts
+    left_table: ACCOUNTS
+    right_table: MEMBERS
+    relationship_columns:
+      - left_column: MEMBER_ID
+        right_column: MEMBER_ID
+    join_type: left_outer
+    relationship_type: many_to_one
+  - name: member_loans
+    left_table: LOANS
+    right_table: MEMBERS
+    relationship_columns:
+      - left_column: MEMBER_ID
+        right_column: MEMBER_ID
+    join_type: left_outer
+    relationship_type: many_to_one
+  - name: account_transactions
+    left_table: TRANSACTIONS
+    right_table: ACCOUNTS
+    relationship_columns:
+      - left_column: ACCOUNT_ID
+        right_column: ACCOUNT_ID
+    join_type: left_outer
+    relationship_type: many_to_one
+  - name: loan_branches
+    left_table: LOANS
+    right_table: BRANCHES
+    relationship_columns:
+      - left_column: BRANCH_ID
+        right_column: BRANCH_ID
+    join_type: left_outer
+    relationship_type: many_to_one
+  - name: account_branches
+    left_table: ACCOUNTS
+    right_table: BRANCHES
+    relationship_columns:
+      - left_column: BRANCH_ID
+        right_column: BRANCH_ID
+    join_type: left_outer
+    relationship_type: many_to_one
+verified_queries:
+  - name: Show me average account balances by membership type
+    question: Show me average account balances by membership type
+    sql: |-
+      SELECT
+        m.membership_type,
+        MIN(a.date_opened) AS start_date,
+        MAX(a.date_opened) AS end_date,
+        AVG(a.balance) AS avg_account_balance
+      FROM
+        accounts AS a
+        LEFT OUTER JOIN members AS m ON a.member_id = m.member_id
+      GROUP BY
+        m.membership_type
+      ORDER BY
+        avg_account_balance DESC NULLS LAST
+    use_as_onboarding_question: false
+    verified_by: Caleb Alexander
+    verified_at: 1757533305
+  - name: Show me member growth by year
+    question: Show me member growth by year
+    sql: |-
+      SELECT
+        DATE_PART('YEAR', date_joined) AS year,
+        MIN(date_joined) AS start_date,
+        MAX(date_joined) AS end_date,
+        COUNT(member_id) AS new_members
+      FROM
+        members
+      GROUP BY
+        DATE_PART('YEAR', date_joined)
+      ORDER BY
+        year DESC NULLS LAST
+    use_as_onboarding_question: false
+    verified_by: Caleb Alexander
+    verified_at: 1757533334
+  - name: How many members do we have by city?
+    question: How many members do we have by city?
+    sql: |-
+      SELECT
+        city,
+        MIN(date_joined) AS start_date,
+        MAX(date_joined) AS end_date,
+        COUNT(member_id) AS member_count
+      FROM
+        members
+      GROUP BY
+        city
+      ORDER BY
+        member_count DESC NULLS LAST
+    use_as_onboarding_question: false
+    verified_by: Caleb Alexander
+    verified_at: 1757533381
+module_custom_instructions:
+  question_categorization: |-
+    Focus on analytics across MEMBERS, ACCOUNTS, TRANSACTIONS, LOANS, BRANCHES.
+    Interpret “spending” as debits: sum of ABS(AMOUNT) where AMOUNT < 0.
+    Use TRANSACTIONS.TRANSACTION_DATE for time. If no date is given, default start date to 2024-01-01.
+    Prefer monthly rollups with DATE_TRUNC('MONTH', …) and clear KPIs (total, count, average).
+    When member attributes are requested (e.g., membership type), join ACCOUNTS → MEMBERS via MEMBER_ID (use defined relationships).
+    Return concise result sets with clear column names and 2‑decimal numeric formatting.
+  sql_generation: |-
+    Use CTEs and relationship joins (no fully qualified physical joins needed beyond model tables).
+    Monthly spending:
+    total_spending: SUM(CASE WHEN AMOUNT < 0 THEN ABS(AMOUNT) ELSE 0 END)
+    transaction_count: COUNT_IF(AMOUNT < 0)
+    avg_transaction_amount: AVG(CASE WHEN AMOUNT < 0 THEN ABS(AMOUNT) END)
+
+    WITH __transactions AS (
+      SELECT TRANSACTION_DATE, TRANSACTION_ID, AMOUNT, ACCOUNT_ID
+      FROM TRANSACTIONS
+    ),
+    __accounts AS (
+      SELECT ACCOUNT_ID, MEMBER_ID FROM ACCOUNTS
+    )
+    SELECT
+      DATE_TRUNC('MONTH', t.TRANSACTION_DATE) AS month,
+      SUM(CASE WHEN t.AMOUNT < 0 THEN ABS(t.AMOUNT) ELSE 0 END) AS total_spending,
+      COUNT_IF(t.AMOUNT < 0) AS transaction_count,
+      AVG(CASE WHEN t.AMOUNT < 0 THEN ABS(t.AMOUNT) END) AS avg_transaction_amount
+    FROM __transactions t
+    LEFT JOIN __accounts a ON t.ACCOUNT_ID = a.ACCOUNT_ID
+    WHERE t.TRANSACTION_DATE >= '2024-01-01'
+    GROUP BY DATE_TRUNC('MONTH', t.TRANSACTION_DATE)
+    ORDER BY month DESC NULLS LAST;
+
+    No governance rules embedded here; governance is enforced by roles/policies.
+    If you ask for “by membership type,” add the MEMBERS join and GROUP BY m.MEMBERSHIP_TYPE.
